@@ -1,37 +1,24 @@
 package ru.gb.vending_machine.products;
 
 public class Product {
-    private int id;
     private String name;
-    private double price;
+    private int volume;
 
-    public Product(String name, double price) {
+    public Product(String name, int volume) {
         this.name = name;
-        this.price = price;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+        this.volume = volume;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
+    public int getVolume() {
+        return volume;
     }
 
     @Override
     public String toString() {
-        return "id: " + id + ", name: " + name + ", price: " + price + "р.";
+        return "Product{name='" + name + "', volume=" + volume + "}";
     }
 }
